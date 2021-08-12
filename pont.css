@@ -1,0 +1,18 @@
+.container .item {
+  color:yellowgreen;
+  border: 2px solid black;
+  line-height: 2;
+  font-size: 20px;/* font-size: 16px; 기본 웹 폰트 사이즈 */
+  font-style: italic;
+  text-align: center;
+}
+
+.container .item:nth-child(2) {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* font와 text속성을 구분하는 법
+font - 글꼴, 크기, 기울기, 두께 등
+text - 정렬, 줄, 넘침 등
+*/

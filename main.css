@@ -1,0 +1,79 @@
+/* css 선택자 - 기본
+ 1. 전체 선택자
+ -> *
+ 2. 태그 선택자
+ -> li, div, span...
+ 3. 클래스 선택자
+ -> .hello
+ 4. 아이디 선택자
+ -> #bye
+*/
+
+/* css 선택자 - 복합
+ 1. 일치 선택자(선택자 abc와 xyz를 만족하는 요소 선택)
+ -> span.orange 
+ 2. 자식 선택자(선택자 abc의 자식 요소 xyz선택)
+ -> ul > .orange
+ 3. 후손 선택자(선택자 abc의 후위 요소 xyz선택, 뛰어쓰기로 구분)
+ -> div .orange
+ 4. 인접 형제 선택자(선택자 abc의 다음 형제 요소 xyz하나를 선택
+ -> .orange + li  (orange클래스의 다음 형제 요소 중 li태그를 가진 것을 선택)
+ 5. 일반 형제 선택자(선택자 abc의 다음 형제 요소 모두를 선택)
+ -> .orange ~ li
+  */
+  
+/* css 선택자 - 가상클래스
+ 1. hover(선택자 ABC 요소에 마우스 커서가 올라가 있을 동안 선택
+ -> a:hover
+ 2. active(선택자 ABC 요소가 클릭되는 동안 선택
+ -> a:active
+ 3. focus(선택자 ABC 요소가 포커스 되면 선택)
+ -> a:focus
+ 4. first-child(선택자 ABC가 형제 요소 중 첫째라면 선택)
+ -> abc:first-child
+ 5. last-child(선택자 ABC가 형제 요소 중 막내라면 선택)
+ -> abc:last-child
+ 6. nth-child(선택자 ABC가 형제 요소 중 N째라면 선택)
+ -> abc:nth-child(2) or abc:nth-child(2n) or abc:nth-child(2n+1)
+*/
+
+/* css 선택자 - 가상요소
+ before, after(선택자 ABC 요소 앞 뒤에 가상의 공간(인라인)을 만들어 내용을 삽입
+ -> a::before{
+   content: '앞'}
+ */
+
+/* css 선택자 - 속성
+ 1. []과 일치하는 속성을 찾아 적용
+ -> [type = 'password'] {}
+ -> [value] {}
+ */
+
+
+/* div {
+ color: red;
+ margin: 20px} */
+/* div:hover {
+  color:blue;
+}  */
+
+#name:active {
+  color:green;
+}
+
+#input_name:focus {
+  background-color:aqua;
+}
+.fruits span:first-child{
+  color:purple;
+}
+
+div.box::before {
+  content:"앞";
+  color: firebrick;
+  font-size: 20;
+}
+
+[placeholder] {
+  color: orange;
+}

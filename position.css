@@ -1,0 +1,29 @@
+/*position: 상대위치 절대위치
+  position-absolute: 부모 위치를 기준으로 절대 위치 선정
+  position-relative: 상대 위치 설정
+*/
+.container {
+  background-color: orange;
+  width: 400px;
+  height: 250px;
+  margin: 50px;
+  padding: 20px;
+  box-sizing: border-box; /*margin, padding을 포함해서 넓이 높이 지정*/
+  position: relative;
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.container .item:nth-child(1) {
+  position:absolute;
+  left: 40px;
+  bottom: 100px;
+}
+.container .item:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}

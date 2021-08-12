@@ -1,0 +1,23 @@
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s; /*전환: 부드럽게 전환됨*/
+
+}
+
+.container .item:nth-child(1):hover { /*hover는 마우스를 올렸을 때 작동*/
+  width:200px;
+  background-color: orange;
+}
+.container .item:nth-child(2):hover {
+  transform: rotate(45deg) scale(1.5);
+  /* rotate: 회전, scale:크기 변경(배수) */
+}
+.container .item:nth-child(3) {
+  transform: perspective(300px) rotateX(45deg);
+  /* perspective:원근법을 사용, 인자로는 어디의 거리에서 바라보는 지 rotateX: x축을 기준으로 회전함 즉, 3차원의 표현 가능 */
+}

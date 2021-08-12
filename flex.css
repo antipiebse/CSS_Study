@@ -1,0 +1,18 @@
+/* flex는 가로 정렬을 해주며 하위 요소로 적용이 됨. */
+.container {
+  background-color: orange;
+  display: flex;
+  justify-content: center;   /* justify-content: 정렬할 순서 기입 */
+
+}
+.container .item {
+  width:100px;
+  height: 100px;
+  background-color: royalblue;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* item의 하위 요소로 apple, banana 등이 선택되어 정렬됨. */
+}
